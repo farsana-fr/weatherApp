@@ -1,0 +1,62 @@
+body
+{
+    height: 80vh;
+    background-image: url("../images/bg2.webp");
+    background-size: cover;
+    /* animation:moveBG 2s infinite; */
+}
+.center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.today
+{
+    width: 30%;
+    /* background-color: rgba(126, 181, 200, 0.5); */
+    background-image: linear-gradient(rgba(31, 31, 32, 0.5), rgba(175, 219, 219, 0.292));
+    
+}
+.row input{
+    width: 30%;
+}
+/* @keyframes moveBG
+{
+    0% {background-size: cover;} 
+    50% {background-size: contain;} 
+    100%{background-size: cover;} 
+} */
+@media(max-width:1200px)
+{
+    .today
+    {
+        width: 60%;
+        
+    }
+    .row input{
+        width: 50%;
+    }
+}
+@media(max-width:900px)
+{
+    .today
+    {
+        width: 80%;
+        
+    }
+    .row input{
+        width: 50%;
+    }
+}
+@media(max-width:400px)
+{
+    .today
+    {
+        width: 90%;
+        
+    }
+    .row input{
+        width: 50%;
+    }
+}
