@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/titleIcon.png">
+    <link rel="icon" href="./images/logo.png">
     <title>FR Weather App</title>
 <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -21,8 +21,15 @@
       <script src="https://kit.fontawesome.com/ce6c2570a2.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="./style/design.css">
 </head>
-<body class="container text-light">
-    <div>
+<body class="container ">
+
+        <div class="bgVideo">
+            <video autoplay muted loop id="myVideo">
+                <source src="./images/backgound.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+        </div>
+    <div class="content">
         <div class="banner mt-5 container">
             <div class="row">
                 <input id="loctn" type="text" class="rounded-5" placeholder="Enter location" >
@@ -32,21 +39,22 @@
             </div>
         </div>
         <div class=" mt-4" id="resultData">
-            <h4 class="text-center">Somewhere on 🌍</h4>
+            <h1 class="text-center">Somewhere on 🌍</h4>
         
             <div class="today container border text-center rounded-5 p-3 mt-2">
                 <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="showWeather" class="w-25">
                 <h1 class=" mt-3 fs-1 fw-bold">20<sup>°C</sup><h6 class=" mt-5 fs-4">Mostly Cloudy</h6><h6>Feels Like 21<sup>°C</sup></h6></h1>
             
                 <div class="row mt-5">
-                    <h6 class="col-lg-3 col-md-3 col-sm-3"><i class="fa-solid fa-wind me-1"></i>&nbsp;&nbsp;&nbsp;&nbsp;WIND&nbsp; : 2kmph</h6>
+                    <h6 class="col-lg-3 col-md-3 col-sm-3"><i class="fa-solid fa-wind me-5"></i>WIND : 2kmph</h6>
                     <h6 class="col-lg-3 col-md-3 col-sm-3"><i class="fa-solid fa-droplet me-1"></i>HUMIDITY : 96%</h6>
                     <h6 class="col-lg-3 col-md-3 col-sm-3"><i class="fa-solid fa-eye me-1"></i>VISIBILITY : 10km</h6>
                     <h6 class="col-lg-3 col-md-3 col-sm-3"><i class="fa-solid fa-gauge-high me-1"></i>PRESSURE : 1011hPa</h6>
                 </div>
             </div>
-        </div>
-    </main>
+    </div>
+    
+</main>
 </body>
 <script src="./script/script.js"> 
 

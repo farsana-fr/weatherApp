@@ -1,25 +1,47 @@
-body
-{
-    height: 80vh;
-    background-image: url("../images/bg2.webp");
-    background-size: cover;
-    /* animation:moveBG 2s infinite; */
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Mulish:wght@200;800&family=Outfit:wght@400;700&family=Poppins:wght@500;900&family=Questrial&family=Rubik+Vinyl&family=Texturina:opsz,wght@12..72,100;12..72,500;12..72,700;12..72,900&display=swap");
+body {
+  height: 80vh;
+  /* background-image: url("../images/bg2.webp"); */
+  background-size: cover;
+
+  /* animation:moveBG 2s infinite; */
+  /* font-family: "Michroma", sans-serif; */
 }
-.center
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+h1 {
+  font-family: "Michroma", sans-serif;
 }
-.today
-{
-    width: 30%;
-    /* background-color: rgba(126, 181, 200, 0.5); */
-    background-image: linear-gradient(rgba(31, 31, 32, 0.5), rgba(175, 219, 219, 0.292));
-    
+.content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: black;
+  width: 100%;
+  /* padding: 20px; */
 }
-.row input{
-    width: 30%;
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -3000;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.today {
+  width: 30%;
+  /* background-color: rgba(126, 181, 200, 0.5); */
+  background-image: linear-gradient(
+    rgba(228, 228, 234, 0.5),
+    rgba(172, 234, 234, 0.292)
+  );
+}
+.row input {
+  width: 30%;
 }
 /* @keyframes moveBG
 {
@@ -27,36 +49,27 @@ body
     50% {background-size: contain;} 
     100%{background-size: cover;} 
 } */
-@media(max-width:1200px)
-{
-    .today
-    {
-        width: 60%;
-        
-    }
-    .row input{
-        width: 50%;
-    }
+@media (max-width: 1200px) {
+  .today {
+    width: 60%;
+  }
+  .row input {
+    width: 50%;
+  }
 }
-@media(max-width:900px)
-{
-    .today
-    {
-        width: 80%;
-        
-    }
-    .row input{
-        width: 50%;
-    }
+@media (max-width: 900px) {
+  .today {
+    width: 80%;
+  }
+  .row input {
+    width: 50%;
+  }
 }
-@media(max-width:400px)
-{
-    .today
-    {
-        width: 90%;
-        
-    }
-    .row input{
-        width: 50%;
-    }
+@media (max-width: 400px) {
+  .today {
+    width: 90%;
+  }
+  .row input {
+    width: 50%;
+  }
 }
