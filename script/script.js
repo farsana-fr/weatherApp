@@ -33,7 +33,7 @@ function displayData(data) {
          <img src="http://openweathermap.org/img/wn/${icon}@4x.png" alt="showWeather" class="w-25">
              <h1 class=" mt-3 fs-1 fw-bold">${temp}<sup>°C</sup><h6 class=" mt-5 fs-4">${condtn}</h6><h6 class="">Feels Like ${feelsLike}<sup>°C</sup></h6></h1>
              <div class="row mt-5">
-                 <h6 class="col-lg-3 col-md-3 col-sm-3"><i class="fa-solid fa-wind ms-2 me-4"></i>WIND :${wind}kmph</h6>
+                 <h6 class="col-lg-3 col-md-3 col-sm-3"><i class="fa-solid fa-wind ms-2 me-1"></i>WIND :${wind}kmph</h6>
                  <h6 class="col-lg-3 col-md-3 col-sm-3"><i class="fa-solid fa-droplet me-1"></i>HUMIDITY : ${humid}%</h6>
                  <h6 class="col-lg-3 col-md-3 col-sm-3"><i class="fa-solid fa-eye me-1"></i>VISIBILITY : ${
                    visible / 1000
